@@ -1,6 +1,7 @@
 # eslint-plugin-md
 
-An ESLint plugin to lint and fix markdown files. It uses amazing [remark-lint](https://github.com/remarkjs/remark-lint) under the hood.
+An ESLint plugin to lint and fix markdown files. It uses amazing [remark-lint](https://github.com/remarkjs/remark-lint) under the hood. 
+Also enables using `prettier` to automatically format your markdown files right from `eslint`! 
 
 ## Motivation
 
@@ -33,7 +34,7 @@ $ yarn add -D eslint-plugin-md
 Add `plugin:md/recommended` config to `extends` section of your your `.eslintrc` configuration file
 
 ```js
-// .eslintrc.js
+// .eslintrc
 {
   extends: ['plugin:md/recommended']
   overrides: [
@@ -47,6 +48,11 @@ Add `plugin:md/recommended` config to `extends` section of your your `.eslintrc`
 
 And this is it! By default it will apply all rules from [Markdown style guide](https://github.com/remarkjs/remark-lint/tree/master/packages/remark-preset-lint-markdown-style-guide).
 
+**Note:** By default ESLint won't lint *.md files. So:
+
+- If you use ESLint from CLI, use `--ext` parameter (e.g. `eslint ./src --ext js,md`)
+- If you use VSCode with ESLint plugin, add `"eslint.validate": ["javascript", "markdown"]` in your VSCode preferences
+
 ## Usage with eslint-plugin-prettier
 
 [Prettier](https://prettier.io/) is an amazing code formatter that supports many languages, including markdown. It is common to use prettier as a rule in ESLint via amazing [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier).
@@ -58,7 +64,7 @@ yarn add -D eslint eslint-plugin-prettier eslint-plugin-md
 ```
 
 ```js
-// .eslintrc.js
+// .eslintrc
 {
   extends: ['plugin:prettier/recommended', 'plugin:md/recommended']
   overrides: [
@@ -84,7 +90,7 @@ yarn add -D eslint eslint-plugin-prettier eslint-plugin-md
 This plugin exposes only one eslint rule - `md/remark`. However, you can customize remark configuration however you wish.
 
 ```js
-// .eslintrc.js
+// .eslintrc
 {
   extends: ['plugin:md/recommended']
   rules: {
@@ -118,7 +124,7 @@ yarn add -D remark-lint-alphabetize-lists
 ```
 
 ```js
-// .eslintrc.js
+// .eslintrc
 {
   extends: ['plugin:md/recommended']
   rules: {
