@@ -93,7 +93,7 @@ module.exports = {
 
 ## Modifying eslint setup for js code inside \*.md files
 
-By default, code inside fenced code block marked as js language (`\`\`\`js`) will be linted against your default eslint
+By default, code inside fenced code block marked as js language (` ```js `) will be linted against your default eslint
 configuration for js files. However, that may be undesirable - usually you will want less strict rules for JS code in
 \*.md files.
 
