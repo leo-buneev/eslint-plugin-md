@@ -13,11 +13,13 @@
   "author": "Leonid Buneev",
   "main": "lib/index.js",
   "scripts": {
+    "lint": "eslint . --ext js,md",
     "dev": "node --inspect ./node_modules/jest/bin/jest.js --runInBand --watch",
     "test": "jest"
   },
   "dependencies": {
     "lodash": "^4.17.15",
+    "markdown-eslint-parser": "^1.2.0",
     "prettier-linter-helpers": "^1.0.0",
     "remark": "^11.0.2",
     "remark-frontmatter": "^1.3.2",

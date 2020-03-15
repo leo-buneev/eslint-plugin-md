@@ -1299,9 +1299,9 @@ eslint-plugin-standard@^4.0.0:
   integrity sha512-v/KBnfyaOMPmZc/dmc6ozOdWqekGp7bBGq4jLAecEfPGmfKiWS4sA8sC0LqiV9w5qmXAtXVn4M3p1jSyhY85SQ==
 
 eslint-plugin-tyrecheck@^2.10.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-tyrecheck/-/eslint-plugin-tyrecheck-2.10.0.tgz#6e10fdd080b9e907701ed6e67c83646235c6e502"
-  integrity sha512-pz6yUsTnY1ryZvnPon4Tei1yhCHBF8wkIg3jw38rhPK1SCwlJRy32bAhHaDWvzvighlePO5fUuOOR4gPW3qLEQ==
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-tyrecheck/-/eslint-plugin-tyrecheck-2.10.1.tgz#66894569feb831260b39a1ce79ed5d5fabd27d48"
+  integrity sha512-qry9Q211Lo0RU3mpP6aXaEq7d+yWDcM53p3tlA9Ap1HGG2uEo6pxftHedBzwXC/NzCqPZ6ByJ0lFy3AEnbcgYg==
   dependencies:
     babel-eslint "^10.0.1"
     eslint "^6.8.0"
@@ -2835,6 +2835,13 @@ markdown-escapes@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/markdown-escapes/-/markdown-escapes-1.0.4.tgz#c95415ef451499d7602b91095f3c8e8975f78535"
   integrity sha512-8z4efJYk43E0upd0NbVXwgSTQs6cT3T06etieCMEg7dRbzCbxUCK/GHlX8mhHRDcp+OLlHkPKsvqQTCvsRl2cg==
+
+markdown-eslint-parser@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/markdown-eslint-parser/-/markdown-eslint-parser-1.2.0.tgz#bf4ec7180bfbdfe50ace931cfc61983f86faaa9a"
+  integrity sha512-AVIbk8YOY4OrsHf/MiFaiXfmmvTla/ogL1wjof0zsyEdKouUOouh54qH8ru0tSMdUCj9km2KMrmvPiCGYA+EFg==
+  dependencies:
+    eslint "^6.8.0"
 
 markdown-table@^1.1.0:
   version "1.1.3"
