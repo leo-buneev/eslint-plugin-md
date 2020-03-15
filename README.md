@@ -91,6 +91,35 @@ module.exports = {
 }
 ```
 
+## Modifying eslint setup for js code inside \*.md files
+
+By default, code inside fenced code block marked as js language (`\`\`\`js`) will be linted against your default eslint
+configuration for js files. However, that may be undesirable - usually you will want less strict rules for JS code in
+\*.md files.
+
+To modify setup, you can use "overrides" section in your eslintrc in this way:
+
+```js
+// .eslintrc.js
+module.exports = {
+  extends: ['plugin:md/recommended'],
+  overrides: [
+    {
+      files: ['*.md'],
+      parser: 'markdown-eslint-parser',
+    },
+    {
+      files: ['*.md.js'], // Will match js code inside *.md files
+      rules: {
+        // Example - disable 2 core eslint rules 'no-unused-vars' and 'no-undef'
+        'no-unused-vars': 'off',
+        'no-undef': 'off',
+      },
+    },
+  ],
+}
+```
+
 ## Supported Rules
 
 This plugin exposes only one eslint rule - `md/remark`. However, you can customize remark configuration however you

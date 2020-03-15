@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-md",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "An ESLint plugin to lint and fix markdown files.",
   "keywords": [
     "markdown",
