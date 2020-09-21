@@ -1,3 +1,10 @@
 {
-  "eslint.validate": ["markdown"]
+  "eslint.validate": [
+    "markdown"
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#5B0936",
+    "titleBar.activeBackground": "#7F0D4B",
+    "titleBar.activeForeground": "#FFFCFD"
+  }
 }
